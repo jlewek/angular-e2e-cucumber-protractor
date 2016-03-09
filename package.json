@@ -1,0 +1,27 @@
+{
+  "name": "jl-playground",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "cucumber": "^0.9.5",
+    "debug": "^2.2.0",
+    "expect": "^1.14.0",
+    "gulp": "^3.9.1",
+    "gulp-run": "^1.6.12",
+    "install": "^0.5.4",
+    "npm": "^3.8.0",
+    "protractor": "^3.1.1",
+    "protractor-cucumber-framework": "^0.3.4",
+    "shelljs": "^0.2.6"
+  },
+  "dependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor test/protractor-conf.js"
+  }
+}
